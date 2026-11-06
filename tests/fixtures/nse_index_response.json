@@ -1,0 +1,214 @@
+{
+  "fixture_metadata": {
+    "kind": "synthetic schema test fixture; not a captured live NSE response",
+    "created_for": "offline parser and pipeline tests",
+    "symbol": "NIFTY"
+  },
+  "records": {
+    "timestamp": "06-Nov-2026 15:00:00",
+    "underlyingValue": 24125.55,
+    "expiryDates": [
+      "15-Dec-2026"
+    ],
+    "data": [
+      {
+        "strikePrice": 23700,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 1043.7,
+          "askPrice": 1049.98,
+          "lastPrice": 1046.84,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.97,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 455.88,
+          "askPrice": 458.63,
+          "lastPrice": 457.25,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.97,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 23800,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 977.08,
+          "askPrice": 982.96,
+          "lastPrice": 980.02,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.74,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 488.27,
+          "askPrice": 491.21,
+          "lastPrice": 489.74,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.74,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 23900,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 912.39,
+          "askPrice": 917.88,
+          "lastPrice": 915.14,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.51,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 522.6,
+          "askPrice": 525.74,
+          "lastPrice": 524.17,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.51,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 24000,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 849.71,
+          "askPrice": 854.83,
+          "lastPrice": 852.27,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.29,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 558.93,
+          "askPrice": 562.29,
+          "lastPrice": 560.61,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.29,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 24100,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 789.11,
+          "askPrice": 793.86,
+          "lastPrice": 791.49,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.06,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 597.34,
+          "askPrice": 600.93,
+          "lastPrice": 599.14,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.06,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 24200,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 736.93,
+          "askPrice": 741.36,
+          "lastPrice": 739.14,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.03,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 644.16,
+          "askPrice": 648.04,
+          "lastPrice": 646.1,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.03,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 24300,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 689.16,
+          "askPrice": 693.3,
+          "lastPrice": 691.23,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.07,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 695.4,
+          "askPrice": 699.59,
+          "lastPrice": 697.5,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.07,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 24400,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 643.64,
+          "askPrice": 647.51,
+          "lastPrice": 645.58,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.11,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 748.9,
+          "askPrice": 753.4,
+          "lastPrice": 751.15,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.11,
+          "underlyingValue": 24125.55
+        }
+      },
+      {
+        "strikePrice": 24500,
+        "expiryDate": "15-Dec-2026",
+        "CE": {
+          "bidprice": 600.35,
+          "askPrice": 603.96,
+          "lastPrice": 602.16,
+          "totalTradedVolume": 1000,
+          "openInterest": 15000,
+          "impliedVolatility": 22.16,
+          "underlyingValue": 24125.55
+        },
+        "PE": {
+          "bidprice": 804.62,
+          "askPrice": 809.46,
+          "lastPrice": 807.04,
+          "totalTradedVolume": 900,
+          "openInterest": 13000,
+          "impliedVolatility": 22.16,
+          "underlyingValue": 24125.55
+        }
+      }
+    ]
+  }
+}
