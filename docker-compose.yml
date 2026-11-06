@@ -4,8 +4,21 @@ services:
     command: streamlit run app.py --server.address=0.0.0.0 --server.port=8501
     ports: ["8501:8501"]
     volumes: ["./.cache:/app/.cache"]
+    environment: &market-env
+      INDIA_RISK_FREE_RATE: ${INDIA_RISK_FREE_RATE:-0.065}
+      DAY_COUNT_BASIS: ${DAY_COUNT_BASIS:-365}
+      MAX_CHAIN_AGE_SECONDS: ${MAX_CHAIN_AGE_SECONDS:-300}
+      CHAIN_CACHE_TTL_SECONDS: ${CHAIN_CACHE_TTL_SECONDS:-30}
+      DEFAULT_DATA_SOURCE: ${DEFAULT_DATA_SOURCE:-auto}
+      NSE_LOT_SIZES: "${NSE_LOT_SIZES:-}"
+      NSE_HOLIDAYS_EXTRA: ${NSE_HOLIDAYS_EXTRA:-}
+      FYERS_CLIENT_ID: ${FYERS_CLIENT_ID:-}
+      FYERS_ACCESS_TOKEN: ${FYERS_ACCESS_TOKEN:-}
+      FYERS_SYMBOL_MAP: "${FYERS_SYMBOL_MAP:-}"
+      CHAIN_CACHE_DIR: /app/.cache/chains
   api:
     build: .
     command: uvicorn api.main:app --host 0.0.0.0 --port 8000
     ports: ["8000:8000"]
     volumes: ["./.cache:/app/.cache"]
+    environment: *market-env

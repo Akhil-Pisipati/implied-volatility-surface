@@ -1,0 +1,18 @@
+flowchart LR
+    UI[Streamlit UI] --> Router[Provider router]
+    API[FastAPI /surface] --> Router
+    Router -->|1. broker option chain| FYERS[FYERS API v3<br/>free Standard limits]
+    Router -->|2. fallback| NSE[NSE option-chain JSON]
+    Router -->|3. fallback| Cache[(Normalized CSV cache)]
+    Router -->|4. fallback| Demo[Synthetic NIFTY-scale chain]
+    FYERS --> Schema[Normalized INR / IST schema]
+    NSE --> Schema
+    Cache --> Schema
+    Demo --> Schema
+    Schema --> Pipeline[Quote filters<br/>parity forward / computed IV]
+    Pipeline --> Pricing[BSM / Greeks]
+    Pipeline --> Surface[SVI / SSVI + checks]
+    Pricing --> Output[Surface, freshness, VIX / IV cross-checks]
+    Surface --> Output
+    Output --> UI
+    Output --> API
