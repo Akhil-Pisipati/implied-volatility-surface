@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "implied-volatility-surface"
+version = "0.1.0"
+description = "A modular implied-volatility surface builder with SVI/SSVI fitting and arbitrage diagnostics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Implied Volatility Surface contributors"}]
+dependencies = [
+  "numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "yfinance>=0.2.40",
+  "fastapi>=0.110", "uvicorn[standard]>=0.27", "streamlit>=1.32",
+  "plotly>=5.20", "pydantic>=2.6", "requests>=2.31"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4", "black>=24.0", "httpx>=0.27"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "data*", "api*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = ["BLE001", "S110"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
